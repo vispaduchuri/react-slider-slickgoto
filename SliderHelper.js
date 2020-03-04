@@ -6,7 +6,7 @@ const SliderHelper = ({data})=>{
 return(<>
   <ul style={{"list-style": 'none'}}>
         {data.categories.map((i, index) => (
-          <li key={index} style={{'display':'inline-block','padding':'5px'}} onClick={() => setId(index)}><a>{i.name}</a></li>
+          <li key={index} style={{'display':'inline-block','padding':'5px'}} onClick={() => setId(index)}><a style={{color:'blue'}}>{i.name}</a></li>
         ))}
       </ul>
       <SliderData data={data} id={id}/>
